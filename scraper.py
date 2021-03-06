@@ -1,3 +1,4 @@
+import instapy
 from instapy import InstaPy
 import schedule
 import os.path
