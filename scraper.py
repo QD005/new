@@ -42,11 +42,11 @@ def job():
     session.set_dont_unfollow_active_users(enabled=True, posts=5)
     session.unfollow_users(amount=10, delay_followbackers=604800)
     session.end()
-schedule.every().day.at('8:15').do(job)
+#schedule.every().day.at('8:15').do(job)
 job ()
-while True:
-    schedule.run_pending()
-    time.sleep(15)
+#while True:
+   # schedule.run_pending()
+ #   time.sleep(15)
 
 # Follow the followers of each given user
        
