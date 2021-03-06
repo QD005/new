@@ -43,6 +43,7 @@ def job():
     session.unfollow_users(amount=10, delay_followbackers=604800)
     session.end()
 schedule.every().day.at('8:15').do(job)
+job ()
 while True:
     schedule.run_pending()
     time.sleep(15)
